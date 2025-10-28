@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids Math Practice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1> Kids Math Practice</h1>
+    <p>Select an activity:</p>
+    <br>
+<label for="bgColor">🎨 Pick Background:</label>
+<input type="color" id="bgColor" onchange="changeBackground(this.value)">
+
+
+    <div class="buttons">
+      <button onclick="forwardCounting()">Forward Counting</button>
+      <button onclick="backwardCounting()">Backward Counting</button>
+      <button onclick="multiplicationTable()">Multiplication Table</button>
+    </div>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
